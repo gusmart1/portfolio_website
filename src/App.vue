@@ -23,12 +23,6 @@ section.web-app-container {
   border: 1px solid black;
   margin: 0 auto;
 
-  section.page-content {
-    margin: 10px 0;
-    background-color: lightgray;
-    padding: 20px;
-  }
-
   footer {
     p {
       text-align: center;

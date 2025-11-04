@@ -76,7 +76,7 @@ body {
 
 .circle .char {
   position: absolute;
-  top: 0;
+  top: -100px;
   left: 0;
   color: black;
   font-size: 3em;
@@ -100,7 +100,7 @@ body {
 
 .circle3 .char {
   position: absolute;
-  top: 100px;
+  top: 0px;
   left: 0;
   color: black;
   font-size: 3em;
@@ -122,7 +122,7 @@ body {
 
 .circle2 .char {
   position: absolute;
-  top: 200px;
+  top: 100px;
   left: 0;
   color: black;
   font-size: 3em;
@@ -144,7 +144,7 @@ body {
 
 .circle4 .char {
   position: absolute;
-  top: 300px;
+  top: 200px;
   left: 0;
   color: black;
   font-size: 3em;
