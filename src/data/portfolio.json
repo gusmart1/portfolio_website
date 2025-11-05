@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Title of piece 1",
+    "created": 2022,
+    "medium": "Illustrator",
+    "description": "Vinyl cover redesign project",
+    "thumbnail": "path/to/thumb"
+
+  },
+  {
+    "id": 2,
+    "title": "Title of piece 2",
+    "created": 2024,
+    "medium": "InDesign",
+    "description": "some bullshit",
+    "thumbnail": "path/to/thumb"
+
+  }
+]
