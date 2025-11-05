@@ -12,21 +12,25 @@
   <div class="circle" data-splitting>
     GUS MARTINSON GRAPHIC DESIGNER
   </div>
-  <div class="circle2" data-splitting>
+
+  <router-link to="/Portfolio" class="Portfolio" data-splitting>
     PORTFOLIO PORTFOLIO PORTFOLIO
-  </div>
-  <div class="circle3" data-splitting>
+  </router-link>
+
+  <router-link to="/about-me" class="AboutMe" data-splitting>
     ABOUT ME ABOUT ME ABOUT ME
-  </div>
-  <div class="circle4" data-splitting>
-    CONTACT ME CONTACT ME
-  </div>
+  </router-link>
+
+  <router-link to="/contact" class="Contact" data-splitting>
+    CONTACT CONTACT
+  </router-link>
 
   </body>
 
 </template>
 
 <script setup>
+
 import { onMounted } from "vue";
 import Splitting from "splitting";
 import "splitting/dist/splitting.css";
@@ -34,6 +38,9 @@ import "splitting/dist/splitting.css";
 onMounted(() => {
   Splitting();
 });
+
+
+
 </script>
 
 <style>
@@ -55,7 +62,7 @@ body {
 }
 
 /* FIRST CIRCLE */
-.circle, .circle2, .circle3, .circle  {
+.circle, .Portfolio, .AboutMe, .Contact  {
   transform-style: preserve-3d;
   animation: animate1 8s linear infinite;
 }
@@ -76,7 +83,7 @@ body {
 
 .circle .char {
   position: absolute;
-  top: -100px;
+  top: 0;
   left: 0;
   color: black;
   font-size: 3em;
@@ -88,19 +95,19 @@ body {
 
 
 /* THIRD CIRCLE */
-.circle3 {
+.AboutMe {
   transform-style: preserve-3d;
   animation: animate1 8s linear infinite;
 }
 
-.circle3 .word {
+.AboutMe .word {
   position: absolute;
   transform-style: preserve-3d;
 }
 
-.circle3 .char {
+.AboutMe .char {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   color: black;
   font-size: 3em;
@@ -110,19 +117,19 @@ body {
 }
 
 /* SECOND CIRCLE */
-.circle2 {
+.Portfolio {
   transform-style: preserve-3d;
   animation: animate1 8s linear infinite;
 }
 
-.circle2 .word {
+.Portfolio .word {
   position: absolute;
   transform-style: preserve-3d;
 }
 
-.circle2 .char {
+.Portfolio .char {
   position: absolute;
-  top: 100px;
+  top: 0;
   left: 0;
   color: black;
   font-size: 3em;
@@ -137,14 +144,14 @@ body {
   animation: animate1 8s linear infinite;
 }
 
-.circle4 .word {
+.Contact .word {
   position: absolute;
   transform-style: preserve-3d;
 }
 
-.circle4 .char {
+.Contact .char {
   position: absolute;
-  top: 200px;
+  top: 0;
   left: 0;
   color: black;
   font-size: 3em;
@@ -160,26 +167,26 @@ body {
   transition: color 0.3s ease;
 }
 
-.circle2:hover .char {
+.Portfolio:hover .char {
   color: #CC016B;
   transition: color 0.3s ease;
 }
 
-.circle3:hover .char {
+.AboutMe:hover .char {
   color:  #FFF10D;
   transition: color 0.3s ease;
 }
 
-.circle4:hover .char {
+.Contact:hover .char {
   color:  black;
   transition: color 0.3s ease;
 }
 
 
 .circle:hover,
-.circle2:hover,
-.circle3:hover,
-.circle4:hover{
+.Portfolio:hover,
+.AboutMe:hover,
+.Contact:hover{
   animation-play-state: paused;
 }
 </style>
