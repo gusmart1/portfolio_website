@@ -5,8 +5,12 @@ import portfolioData from '@/data/portfolio.json'
 <template>
   <div class="all-items">
     <div class="item" v-for="thing in portfolioData" :key="thing.id">
-      {{ thing }}
+      <portfolio-hero :thumbnail="thing.thumbnail" title="thing.title" />
+      <img :src="'./src/assets/' + thing.thumbnail" />
     </div>
+
+    <portfolio-hero thumbnail="item1.jpg" title="Item title" />
+
   </div>
 </template>
 
@@ -18,8 +22,11 @@ div.all-items {
 
   div.item {
     border: 1px solid black;
-    min-width: 400px;
+    max-width: 400px;
 
+  img {
+    width: 100%;
+  }
   }
 }
 

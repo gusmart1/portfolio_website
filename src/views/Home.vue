@@ -163,22 +163,22 @@ body {
 
 /*hovering colors and pause*/
 .circle:hover .char {
-  color: #0093D3;
+  color: black;
   transition: color 0.3s ease;
 }
 
 .Portfolio:hover .char {
-  color: #CC016B;
+  color: #0093D3;
   transition: color 0.3s ease;
 }
 
 .AboutMe:hover .char {
-  color:  #FFF10D;
+  color:  #CC016B;
   transition: color 0.3s ease;
 }
 
 .Contact:hover .char {
-  color:  black;
+  color:  #FFF10D;
   transition: color 0.3s ease;
 }
 
