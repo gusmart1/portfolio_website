@@ -32,8 +32,9 @@ a {
 
 
   &:hover {
-    color: lemonchiffon;
+    color: #0093D3;
   }
+
 
   &.primary {
     font-size: 120%;

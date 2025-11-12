@@ -1,16 +1,15 @@
 <script setup>
 import portfolioData from '@/data/portfolio.json'
+import PortfolioHero from '@/components/portfolio/PortfolioHero.vue'
 </script>
 
 <template>
   <div class="all-items">
-    <div class="item" v-for="thing in portfolioData" :key="thing.id">
-      <portfolio-hero :thumbnail="thing.thumbnail" title="thing.title" />
-      <img :src="'./src/assets/' + thing.thumbnail" />
+    <div class="all-items">
+      <portfolio-hero v-for="item in portfolioData" :key="item.id"
+                      :thumbnail="item.thumbnail" :title="item.title"
+      />
     </div>
-
-    <portfolio-hero thumbnail="item1.jpg" title="Item title" />
-
   </div>
 </template>
 

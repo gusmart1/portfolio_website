@@ -1,11 +1,7 @@
-<script setup>
-
-</script>
-
 <template>
-  <p>Here's a little bit about me!</p>
+  <AboutLayout />
 </template>
 
-<style scoped>
-
-</style>
+<script setup lang="ts">
+import AboutLayout from '@/components/AboutLayout.vue'
+</script>
