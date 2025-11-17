@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Navbar from "@/components/Navbar.vue";
+import MINIMEGUS from "@/assets/MINIMEGUS.jpg"; // import the image
 </script>
 
 <template>
@@ -14,22 +15,19 @@ import Navbar from "@/components/Navbar.vue";
     </section>
 
     <footer>
-      footer
+      <img :src="MINIMEGUS" alt="MINIMEGUS">
     </footer>
   </section>
 </template>
 
 <style scoped>
-section.web-app-container {
-  max-width: 100%;
-  max-height: 100%;
-  border: 1px solid black;
-  margin: 0 auto;
+footer {
+  text-align: center;
+  padding: 1rem 0;
+}
 
-  footer {
-    p {
-      text-align: center;
-    }
-  }
+img {
+  max-width: 150px; /* adjust size as needed */
+  height: auto;
 }
 </style>

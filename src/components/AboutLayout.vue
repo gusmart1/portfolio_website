@@ -12,7 +12,7 @@
 
     <!-- ABOUT SECTION -->
     <section class="about">
-      <h2>ABOUT<br />ME</h2>
+      <h2>ABOUT ME</h2>
       <h3>DESCRIPTION</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

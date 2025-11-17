@@ -12,16 +12,13 @@ const props = defineProps({
 
 
     <section class="picture">
-      <img :src="`./src/assets/${image}`" :alt="title" />
+      <img :src="`./src/assets/${image}`" />
     </section>
-
-
     <section class="info">
       <h1 class="title">{{ title }}</h1>
       <h2 class="medium">{{ medium }}</h2>
       <p class="description">{{ description }}</p>
     </section>
-
   </div>
 </template>
 
@@ -36,18 +33,19 @@ const props = defineProps({
   padding: 0;
 }
 
-/* FULL-WIDTH IMAGE */
 .picture img {
   width: 100%;
-  height: auto;     /* shows full image */
+  height: auto;
   display: block;
 }
 
-/* TEXT AREA */
+/* TEXT BOX */
 .info {
-  padding: 2rem 1.5rem;
-  max-width: 650px; /* readable width */
-  margin: 0 auto;
+  padding: 1.5rem;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .title {
@@ -60,7 +58,7 @@ const props = defineProps({
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0.75rem 0 0.5rem;
+  margin: 0.75rem 0;
 }
 
 .description {
@@ -68,7 +66,7 @@ const props = defineProps({
   line-height: 1.5;
 }
 
-/*  DESKTOP LAYOUT */
+/*  DESKTOP LAYOUT  */
 @media (min-width: 900px) {
 
   /* Side-by-side layout */
@@ -77,14 +75,14 @@ const props = defineProps({
     align-items: stretch;
   }
 
-  /* every other card */
+  /* Flip every other  */
   .layout-card:nth-child(even) {
     flex-direction: row-reverse;
   }
 
-  /* Image width */
+  /* Image column */
   .picture {
-    flex: 1.5;
+    flex: 1;
   }
 
   .picture img {
@@ -97,12 +95,12 @@ const props = defineProps({
   /* Text column */
   .info {
     flex: 1;
-    max-width: 500px;
-    padding: 3rem 3rem;
-    margin: 0;
+    max-width: 1200px;        /* width on desktop */
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left;
   }
 }
 </style>
