@@ -1,163 +1,108 @@
 <script setup>
 const props = defineProps({
-  image: {
-    type: String,
-    required: true,
-  },
-  title: {
-    type: String,
-    required: true,
-  },
-  description: {
-    type: String,
-    default: '',
-  },
+  image: { type: String, required: true },
+  title: { type: String, required: true },
+  description: { type: String, default: '' },
+  medium: { type: String, required: true }
 })
 </script>
 
 <template>
   <div class="layout-card">
 
-    <!-- Main Content -->
-    <section class="item-section">
-      <div
-        class="picture"
-        :style="`background-image: url(./src/assets/${image})`"
-      >
-      </div>
 
-      <div class="info">
-        <h1 class="title">{{ title }}</h1>
-        <h2 class="desc-heading">DESCRIPTION</h2>
-        <p class="desc-text">
-          {{ description }}
-        </p>
-      </div>
+    <section class="picture">
+      <img :src="`./src/assets/${image}`" :alt="title" />
     </section>
+
+
+    <section class="info">
+      <h1 class="title">{{ title }}</h1>
+      <h2 class="medium">{{ medium }}</h2>
+      <p class="description">{{ description }}</p>
+    </section>
+
   </div>
 </template>
 
 <style scoped>
+/*  MOBILE LAYOUT  */
 .layout-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-family: "IBM Plex Sans", sans-serif;
-  padding: 1rem;
-  min-height: 100vh;
-}
-
-/* NAVBAR */
-.nav {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  font-weight: 700;
   width: 100%;
-  padding: 1rem 0;
-  flex-wrap: wrap;
+  margin-bottom: 4rem;
+  border: none;
+  padding: 0;
 }
 
-.nav a {
-  text-decoration: none;
-  color: #210000;
-  transition: opacity 0.2s;
-}
-
-.nav a:hover {
-  opacity: 0.7;
-}
-
-/* ITEM SECTION */
-.item-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid #000;
-  background-color: #eed0d0;
-  max-width: 400px;
+/* FULL-WIDTH IMAGE */
+.picture img {
   width: 100%;
-  margin-top: 2rem;
+  height: auto;     /* shows full image */
+  display: block;
 }
 
-/* PICTURE AREA */
-.picture {
-  width: 100%;
-  height: 250px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #210000;
-  font-size: 2rem;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-/* INFO AREA */
+/* TEXT AREA */
 .info {
-  padding: 1.5rem;
-  color: #210000;
-  text-align: left;
+  padding: 2rem 1.5rem;
+  max-width: 650px; /* readable width */
+  margin: 0 auto;
 }
 
 .title {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 900;
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  line-height: 1.1;
 }
 
-.desc-heading {
-  font-size: 1.1rem;
+.medium {
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin: 0.75rem 0 0.5rem;
 }
 
-.desc-text {
-  line-height: 1.6;
+.description {
   font-size: 1rem;
+  line-height: 1.5;
 }
 
-/* RESPONSIVE */
-@media (min-width: 768px) {
-  .item-section {
-    max-width: 500px;
-  }
+/*  DESKTOP LAYOUT */
+@media (min-width: 900px) {
 
-  .picture {
-    height: 300px;
-    font-size: 2.2rem;
-  }
-
-  .desc-text {
-    font-size: 1.05rem;
-  }
-}
-
-@media (min-width: 1024px) {
+  /* Side-by-side layout */
   .layout-card {
-    padding: 2rem 0;
+    flex-direction: row;
+    align-items: stretch;
   }
 
-  .nav {
-    gap: 3rem;
+  /* every other card */
+  .layout-card:nth-child(even) {
+    flex-direction: row-reverse;
   }
 
-  .item-section {
-    max-width: 600px;
-  }
-
+  /* Image width */
   .picture {
-    height: 350px;
+    flex: 1.5;
   }
 
-  .desc-text {
-    font-size: 1.1rem;
+  .picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Text column */
+  .info {
+    flex: 1;
+    max-width: 500px;
+    padding: 3rem 3rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 </style>

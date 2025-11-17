@@ -11,6 +11,7 @@ import portfolioData from '@/data/portfolio.json'
       :image="item.thumbnail"
       :title="item.title"
       :description="item.description"
+      :medium="item.medium"
       :showNav="true"
     />
   </div>

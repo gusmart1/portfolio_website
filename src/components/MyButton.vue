@@ -30,17 +30,13 @@ a {
   border: 1px solid black;
   padding: 5px;
 
-
   &:hover {
     color: #0093D3;
   }
-
-
   &.primary {
     font-size: 120%;
     padding: 10px;
   }
-
   &.router-link-active {
     font-weight: bold;
   }
