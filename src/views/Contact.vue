@@ -1,9 +1,9 @@
 <script setup>
-
+import ContactLayout from '@/components/ContactLayout.vue'
 </script>
 
 <template>
-  <p>contact!</p>
+  <ContactLayout />
 </template>
 
 <style scoped>

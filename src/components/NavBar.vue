@@ -17,6 +17,5 @@ nav {
   gap: 1.5rem;
   justify-content: center;
   padding: 1rem;
-  border-bottom: 1px solid #ccc;
 }
 </style>

@@ -3,14 +3,12 @@ const props = defineProps({
   image: { type: String, required: true },
   title: { type: String, required: true },
   description: { type: String, default: '' },
-  medium: { type: String, required: true }
+  medium: { type: String, required: true },
 })
 </script>
 
 <template>
   <div class="layout-card">
-
-
     <section class="picture">
       <img :src="`./src/assets/${image}`" />
     </section>
@@ -68,7 +66,6 @@ const props = defineProps({
 
 /*  DESKTOP LAYOUT  */
 @media (min-width: 900px) {
-
   /* Side-by-side layout */
   .layout-card {
     flex-direction: row;
@@ -95,7 +92,7 @@ const props = defineProps({
   /* Text column */
   .info {
     flex: 1;
-    max-width: 1200px;        /* width on desktop */
+    max-width: 1200px; /* width on desktop */
     padding: 3rem;
     display: flex;
     flex-direction: column;

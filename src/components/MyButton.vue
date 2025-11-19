@@ -18,9 +18,7 @@ const props = defineProps({
 <style scoped>
 .nav-link {
   padding: 8px 15px;
-  border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
   color: black;
   transition: all 0.2s ease;
   display: inline-block;
