@@ -1,10 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import photo from '@/assets/me_and_dog.jpg'
+</script>
 
 <template>
   <div class="layout">
     <!-- PICTURE SECTION -->
     <section class="picture">
-      <h1>PICTURE</h1>
+      <img :src="photo" alt="Me and Dog" />
     </section>
 
     <!-- ABOUT SECTION -->
@@ -12,11 +14,8 @@
       <h2>ABOUT ME</h2>
       <h3>DESCRIPTION</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Gus Martinson is a Graphic Design Junior at the University of Minnesota College of Design.
+        I am proficient in Adobe Cloud Software including InDesign, Illustrator, and Photoshop.
       </p>
     </section>
   </div>
@@ -32,11 +31,16 @@
 
 /* PICTURE SECTION */
 .picture {
-  background-color: #d9d9d9;
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.picture img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
 }
 
 /* ABOUT SECTION */
