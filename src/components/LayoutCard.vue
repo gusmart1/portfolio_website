@@ -4,6 +4,8 @@ const props = defineProps({
   title: { type: String, required: true },
   description: { type: String, default: '' },
   medium: { type: String, required: true },
+  created: { type: Number, required: true },
+  course: { type: String, required: true },
 })
 </script>
 
@@ -15,6 +17,8 @@ const props = defineProps({
     <section class="info">
       <h1 class="title">{{ title }}</h1>
       <h2 class="medium">{{ medium }}</h2>
+      <h2 class="course">{{ course }}</h2>
+      <h2 class="created">{{ created }}</h2>
       <p class="description">{{ description }}</p>
     </section>
   </div>
@@ -58,6 +62,21 @@ const props = defineProps({
   text-transform: uppercase;
   margin: 0.75rem 0;
 }
+
+.created {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.25rem 0 0.75rem 0;
+  text-transform: uppercase;
+}
+
+.course {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.25rem 0 0.75rem 0;
+  text-transform: uppercase;
+}
+
 
 .description {
   font-size: 1rem;

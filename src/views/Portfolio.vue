@@ -12,6 +12,8 @@ import portfolioData from '@/data/portfolio.json'
       :title="item.title"
       :description="item.description"
       :medium="item.medium"
+      :created="item.created"
+      :course="item.course"
       :showNav="true"
     />
   </div>

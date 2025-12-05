@@ -36,11 +36,6 @@ onMounted(() => {
 </script>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   display: flex;
@@ -181,6 +176,5 @@ body {
 .Contact:hover {
   animation-play-state: paused;
 }
-
 
 </style>
