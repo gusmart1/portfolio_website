@@ -111,8 +111,8 @@ const props = defineProps({
   /* Text column */
   .info {
     flex: 1;
-    max-width: 1200px; /* width on desktop */
-    padding: 3rem;
+    max-width: 1000px; /* width on desktop */
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

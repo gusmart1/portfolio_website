@@ -35,6 +35,16 @@
     "description": "Denis Villenueve’s Dune movies are minimalist and gorgeous to behold. The visuals of the film were too breathtaking to not use, so the text was composed in ways to support the visuals of the film by becoming part of the visuals as opposed to being placed on top of them. The typeface for the title of the movie should be stylized and futuristic, while still easy to read. A sans-serif typeface was chosen for a secondary typeface for its easy legibility.",
     "thumbnail": "Project4_Portfolio-Spreadsweb.jpg",
     "course": "Text and Image"
+  },
+
+  {
+    "id": 5,
+    "title": "Lunascape",
+    "created": 2025,
+    "medium": "Figma",
+    "description": "Travel app inspired by noctourism. Explore nightlight by maps or curated journeys featuring multiple destinations. Use your AR camera to explore the night sky.",
+    "thumbnail": "Lunascape.jpg",
+    "course": "User Experience in Design"
   }
 
 ]

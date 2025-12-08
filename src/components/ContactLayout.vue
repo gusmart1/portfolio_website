@@ -10,9 +10,18 @@
       <h2>CONTACT</h2>
       <h3>WAYS TO CONTACT ME</h3>
       <p>
-        Email: gusomartinson@gmail.com <br>
-        Phone: 762-218-5549 <br>
-        Instagram: gus_martinson
+         <span class="contact-item">
+    <img src="/src/assets/mail_icon.svg" class="icon" />
+    gusomartinson@gmail.com
+  </span>
+        <span class="contact-item">
+    <img src="/src/assets/phone.svg" class="icon" />
+    762-218-5549
+  </span>
+        <span class="contact-item">
+    <img src="/src/assets/instagram.svg" class="icon" />
+    gus_martinson
+  </span>
       </p>
     </section>
   </div>
@@ -51,5 +60,16 @@
   line-height: 1.6;
   color: #111;
   text-align: left;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
 }
 </style>
