@@ -13,7 +13,7 @@ import photo from '@/assets/me_and_dog.jpg'
     <section class="about">
       <h2>ABOUT ME</h2>
       <p>
-        Gus Martinson is a Graphic Design Junior at the University of Minnesota College of Design.
+        Gus Martinson is a Graphic Design Junior at the University of Minnesota College of Design. <br>
         I am proficient in Adobe Cloud Software including InDesign, Illustrator, and Photoshop.
       </p>
     </section>

@@ -77,7 +77,6 @@ const props = defineProps({
   text-transform: uppercase;
 }
 
-
 .description {
   font-size: 1rem;
   line-height: 1.5;
@@ -108,10 +107,10 @@ const props = defineProps({
     display: block;
   }
 
-  /* Text column */
+  /* Text */
   .info {
     flex: 1;
-    max-width: 1000px; /* width on desktop */
+    max-width: 1000px;
     padding: 2rem;
     display: flex;
     flex-direction: column;

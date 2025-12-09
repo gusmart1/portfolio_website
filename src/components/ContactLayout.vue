@@ -1,27 +1,24 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="layout">
-
-
     <!-- ABOUT SECTION -->
     <section class="about">
       <h2>CONTACT</h2>
       <h3>WAYS TO CONTACT ME</h3>
       <p>
-         <span class="contact-item">
-    <img src="/src/assets/mail_icon.svg" class="icon" />
-    gusomartinson@gmail.com
-  </span>
         <span class="contact-item">
-    <img src="/src/assets/phone.svg" class="icon" />
-    762-218-5549
-  </span>
+          <img src="/src/assets/mail_icon.svg" class="icon" />
+          gusomartinson@gmail.com
+        </span>
         <span class="contact-item">
-    <img src="/src/assets/instagram.svg" class="icon" />
-    gus_martinson
-  </span>
+          <img src="/src/assets/phone.svg" class="icon" />
+          762-218-5549
+        </span>
+        <span class="contact-item">
+          <img src="/src/assets/instagram.svg" class="icon" />
+          gus_martinson
+        </span>
       </p>
     </section>
   </div>
@@ -34,7 +31,6 @@
   display: flex;
   flex-direction: column;
 }
-
 
 /* ABOUT SECTION */
 .about {
