@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "KID A Vinyl Packaging",
+    "created": 2024,
+    "medium": "Adobe Photoshop, Illustrator, and InDesign",
+    "description": "Redesign of the packaging of the album Kid A by Radiohead using only typographic and textural elements. The design was created to portray the dark and dystopian lyrical themes, and reflect the experimental and electronic direction that the band was going in sonically. The design includes the cover, back cover, sleeve with lyrics and credits, and labels. Created in Adobe Photoshop, Illustrator, and InDesign",
+    "thumbnail": "KIDA_record_sleeves.jpg",
+    "course": "Typography"
+
+  },
+  {
+    "id": 2,
+    "title": "Arrival Packaging",
+    "created": 2025,
+    "medium": "Adobe Photoshop and InDesign",
+    "description": "Redesign of the packaging for the film Arrival, in the style of the Criterion Collection. The language that one of the aliens speaks is circular and synchronous and is represented as flowing ink or fog. I felt that the flowing nature of watercolors best represented the atypical flow of time, both the language and the story follow. The painting was drawn digitally in Adobe Photoshop and then the packaging was put together in InDesign.",
+    "thumbnail": "Arrival_Project4_Gus-Martinson.jpg",
+    "course": "Design and its Discontents"
+  },
+  {
+    "id": 3,
+    "title": "Cloud Atlas Book Cover",
+    "created": 2025,
+    "medium": "Adobe Photoshop and InDesign",
+    "description": "Cloud Atlas written by David Mitchell is compromised of six loosely interconnected stories in different genres and time periods, ranging from 1800s New Zealand to post-apocalypse Hawaii. The cover, spine, and back features a photo of clouds as the primary motif of the novel is “souls drifting across time like clouds in the sky”. There are six different typefaces for each “Cloud Atlas” to represent the unique times and genres in the novel. The primary typeface is Helvetica which best represents all the stories, which is also used to represent the 4th part which is the only story to take place in modern times. ",
+    "thumbnail": "CLOUDATLASCOVERSMALLER.jpg",
+    "course": "Design and its Discontents"
+  },
+  {
+    "id": 4,
+    "title": "DUNE Title Cards",
+    "created": 2025,
+    "medium": "Adobe Photoshop and InDesign",
+    "description": "Denis Villenueve’s Dune movies are minimalist and gorgeous to behold. The visuals of the film were too breathtaking to not use, so the text was composed in ways to support the visuals of the film by becoming part of the visuals as opposed to being placed on top of them. The typeface for the title of the movie should be stylized and futuristic, while still easy to read. A sans-serif typeface was chosen for a secondary typeface for its easy legibility.",
+    "thumbnail": "Project4_Portfolio-Spreadsweb.jpg",
+    "course": "Text and Image"
+  },
+
+  {
+    "id": 5,
+    "title": "Lunascape",
+    "created": 2025,
+    "medium": "Figma",
+    "description": "Travel app inspired by noctourism. Explore nightlight by maps or curated journeys featuring multiple destinations. Use your AR camera to explore the night sky.",
+    "thumbnail": "Lunascape.jpg",
+    "course": "User Experience in Design"
+  }
+
+]
